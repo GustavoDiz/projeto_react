@@ -1,41 +1,42 @@
+
 .App {
   text-align: center;
 }
 
 .card-container {
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  display: grid;
+  grid-auto-rows: 300px;
+  grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
+  gap: 20px; /* Espaçamento entre os cartões */
   background-color: #d3d3d3;
+  justify-content: center;
 }
 
 .card {
-  padding-top: 200px;
-  text-align: center;
-  width: 240px; 
-  height: auto;
-  padding-bottom: 250px; 
-  margin: 30px;
+  color: red;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #ddd;
-  font-size: 24px;
+  background-image: url(../imgs/bg1.jpg);
+  background-size: cover;
+  background-position: center; 
+  padding: 5px;
+  font-size: 1.05em;
   cursor: pointer;
   transition: transform 0.5s;
-  display: flex;
-  overflow: hidden
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.card.flipped {
-  background-color: #fff;
+.flipped {
+  background-image: none;
+  background-color: white;
   transform: rotateY(180deg) scale(-1, 1);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
 }
 
-.card:hover {
-  background-color: #4299e1;
-}
 .card-content {
   padding: 20px;
 }
@@ -60,6 +61,25 @@ footer {
 }
 
 .footer-subject {
-  color: white;
   font-style: bold;
+}
+
+.back{
+  font-size: 2em;
+  font-weight: bold;
+  color: #d3d3d3 !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.score{
+  z-index: 2;
+  position: fixed;
+  bottom: 2%;
+  left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 1.5em;
 }
