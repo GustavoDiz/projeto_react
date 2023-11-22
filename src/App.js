@@ -12,7 +12,7 @@ const App = () => {
   const [indicesVirados, setindicesVirados] = useState([]);
   const [parearCards, setparearCards] = useState([]);
   const [start, setStart] = useState(true);
-  const [life, setLife] = useState(5);
+  const [life, setLife] = useState(8);
   const [showModal, setShowModal] = useState(false);
   const [body, setBody] = useState("");
   const [button, setButton] = useState("");
