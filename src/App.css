@@ -76,10 +76,12 @@ footer {
   position: fixed;
   bottom: 2%;
   left: 5px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  background-color: #f0f0f0;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #212529;
+  color: #d3d3d3;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   font-weight: bold;
   font-size: 1.5em;
 }
