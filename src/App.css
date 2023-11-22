@@ -6,7 +6,7 @@
 .card-container {
   padding: 20px;
   display: grid;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 200px;
   grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
   gap: 20px; /* Espaçamento entre os cartões */
   background-color: #d3d3d3;
