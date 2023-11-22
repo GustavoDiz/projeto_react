@@ -96,4 +96,9 @@ footer {
     background-color: #d3d3d3;
     justify-content: center;
   }
+
+  .card{
+    font-size: 0.6em;
+  }
 }
+
